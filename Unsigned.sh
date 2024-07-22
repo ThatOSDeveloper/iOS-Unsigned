@@ -3,15 +3,15 @@ mkdir -p logs
 #set -x
 verbose=1
 
-echo "[*] Command ran:`if [ $EUID = 0 ]; then echo " sudo"; fi` ./semaphorin.sh $@"
+echo "[*] Command ran:`if [ $EUID = 0 ]; then echo " sudo"; fi` ./Unsigned.sh $@"
 cd "$(dirname "$0")"
 os=$(uname)
 maj_ver=$(echo "$os_ver" | awk -F. '{print $1}')
 dir="$(pwd)"
 bin="$(pwd)/$(uname)"
 sshtars="$(pwd)/sshtars"
-echo "Semaphorin | Version 1.0"
-echo "Written by y08wilm and Mineek | Some code and ramdisk from Nathan"
+echo "iOS-Unsigned | Version 1.0"
+echo "Written by the iDroidOS team and thanks to seprmvr64 for some code"
 echo ""
 max_args=1
 arg_count=0
@@ -73,27 +73,7 @@ if [[ $os =~ Darwin ]]; then
     sudo xattr -cr .
     os_ver=$(sw_vers -productVersion)
     if [[ $os_ver =~ ^10\.1[3-4]\.* ]]; then
-        echo "[!] macOS/OS X $os_ver is not supported by this script. Please install macOS 10.15 (Catalina) or later to continue if possible."
-        sleep 1
-        read -p "[*] You can press the enter key on your keyboard to skip this warning  " r1
-        if [[ ! -e "$bin"/.compiled ]]; then
-            rm -rf Kernel64Patcher
-            git clone --recursive https://github.com/y08wilm/Kernel64Patcher
-            cd Kernel64Patcher
-            rm -rf ../Darwin/Kernel64Patcher
-            make
-            mv seprmvr64 Kernel64Patcher
-            cp Kernel64Patcher ../Darwin/Kernel64Patcher
-            cd ..
-            rm -rf Kernel64Patcher
-            rm -rf dsc64patcher
-            git clone --recursive https://github.com/y08wilm/dsc64patcher
-            cd dsc64patcher
-            rm -rf ../Darwin/dsc64patcher
-            gcc Kernel64Patcher.c -o ../Darwin/dsc64patcher
-            touch ../Darwin/.compiled
-            cd ..
-            rm -rf dsc64patcher
+        echo "[!] You are running macOS $os_ver. This is not supported. Please upgrade to 10.15 or newer."
         fi
     else
         echo "[*] You are running macOS $os_ver. Continuing..."

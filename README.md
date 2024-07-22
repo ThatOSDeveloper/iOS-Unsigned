@@ -1,6 +1,6 @@
 <div align="center">
 <img src="https://files.catbox.moe/x7b0e2.png" height="128" width="128" style="border-radius:25%">
-   <h1> Semaphorin 
+   <h1> iOS-Unsigned 
       <br/> 64-Bit Downgrade, Dualboot & Jailbreak Utility
    </h1>
 </div>
@@ -43,13 +43,13 @@ To use this app, you need to downgrade to a supported version, and have a suppor
 
 `xcode-select install` to install `git` on macos
 
-`git clone https://github.com/LukeZGD/Semaphorin && cd Semaphorin`
+`git clone https://github.com/iDroidOS/iOS-Unsigned && cd iOS-Unsigned`
 
 Connect device in DFU mode
 
-`sudo ./semaphorin.sh <the version you are downgrading to> --restore`
+`sudo ./Unsigned.sh <the version you are downgrading to> --restore`
 
-For example you may write `sudo ./semaphorin.sh 9.3 --restore`
+For example you may write `sudo ./Unsigned.sh 9.3.3 --restore`
 
 The script has to backup important files from your current iOS version before you can downgrade.
 
@@ -65,9 +65,9 @@ For iOS 7 and 8, see below troubleshooting steps for jailbreaking.
 
 Connect device in DFU mode
 
-`sudo ./semaphorin.sh <the version you downgraded to previously> --boot`
+`sudo ./Unsigned.sh <the version you downgraded to previously> --boot`
 
-For example, if you downgraded to iOS 9.3, you would run `sudo ./semaphorin.sh 9.3 --boot`.
+For example, if you downgraded to iOS 9.3.3, you would run `sudo ./Unsigned.sh 9.3.3 --boot`.
 
 It should just boot to your requested iOS version normally.
 
@@ -140,7 +140,8 @@ We back up the `activation_records` from your main OS prior to downgrading your 
 - [edwin170](https://github.com/edwin170) for a ton of help with fixing cell service, icloud, audio, 3d touch, gyroscope, microphone and other issues
 - [johndoe123](https://twitter.com/iarchiveml) for the a7 ios 7 [downgrade guide](https://ios7.iarchive.app/downgrade/) which made this entire project possible
 - [LukeZGD](https://github.com/LukeZGD/) for the updated [cydia.tar](https://github.com/LukeZGD/Legacy-iOS-Kit/raw/main/resources/jailbreak/freeze.tar) for jailbreaking older ios versions
-- [TheRealClarity](https://github.com/TheRealClarity) for wtfis.app which we [repurposed](https://github.com/y08wilm/wtfis/blob/ios7/wtfis/ViewController.m#L27) to run [evasi0n7](https://ios.cfw.guide/installing-evasi0n7/) for sandbox patch on ios 7 to allow cydia substrate to not break apps
+- [TheRealClarity](https://github.com/TheRealClarity) for wtfis.app
+[evasi0n7](https://ios.cfw.guide/installing-evasi0n7/) for sandbox patch on ios 7 to allow cydia substrate to not break apps
 - [Nathan](https://github.com/verygenericname) for the ssh ramdisk and [iBoot64Patcher fork](https://github.com/verygenericname/iBoot64Patcher)
 - [Mineek](https://github.com/mineek) for [seprmvr64](https://github.com/mineek/seprmvr64) and other patches. I want to give a very special thanks to [Mineek](https://github.com/mineek), if it werent for them this entire project would have not been possible. you are amazing and i appreciate all that you do, thank you so much
 - [nyuszika7h](https://github.com/nyuszika7h) for the script to help get into DFU
