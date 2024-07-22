@@ -82,8 +82,8 @@ elif [[ $os =~ Linux ]]; then
     if [[ $(command -v systemctl 2>/dev/null) ]]; then
         sudo systemctl stop usbmuxd
     fi
-    #sudo killall usbmuxd 2>/dev/null
-    #sleep 1
+    sudo killall usbmuxd 2>/dev/null
+    sleep 1
     sudo -b $bin/usbmuxd -pf 2>/dev/null
     trap "clean_usbmuxd" EXIT
     trap "exit 1" INT TERM
