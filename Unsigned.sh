@@ -73,8 +73,7 @@ if [[ $os =~ Darwin ]]; then
     sudo xattr -cr .
     os_ver=$(sw_vers -productVersion)
     if [[ $os_ver =~ ^10\.1[3-4]\.* ]]; then
-        echo "[!] You are running macOS $os_ver. This is not supported. Please upgrade to 10.15 or newer."
-        fi
+        echo "[!] macOS/OS X $os_ver is not supported by this script. Please install macOS 10.15 (Catalina) or later to continue if possible."
     else
         echo "[*] You are running macOS $os_ver. Continuing..."
     fi
