@@ -13,11 +13,7 @@
 
 ## Support
 
-No support
-
-Do not expect updates to this anymore, especially with all that has happened surrounding this tool
-
-It may be better for someone to rewrite the entire thing, and/or just create or use another tool
+We will try our best  to support this tool. If you have any issues, please open an issue on GitHub or on the discord server.
 
 ## Chart of compatibility
 
@@ -95,14 +91,14 @@ The script will downgrade your iOS version and jailbreak the downgraded OS very 
 
 We back up the `activation_records` from your main OS prior to downgrading your device, so please make sure your main OS is activated before using this tool.
 
-## Troubleshooting
+## Troubleshooting (only for iOS 7 and 8 unless said otherwise)
 
    ### Deep sleep, device won't turn on after locking it, have to reboot.
    The issue that causes deep sleep is unfortunately **unfixable**. There is, however, a workaround to this:
 
    Install the tweak "Insomnia" from BigBoss repo or "Fiona" from the repo https://julioverne.github.io
       
-   *Note: This does slightly affect battery life due to the way it works. You probably aren't using this script for battery life though, are you.
+   *Note: This does slightly affect battery life due to the way it works. You probably aren't using this script for battery life though, are you.*
 
    ### Unable to connect to WiFi networks, incorrect password.
    This is caused by an issue that's *impossible* to fix. You need to connect to an open WiFi network
