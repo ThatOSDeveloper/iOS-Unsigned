@@ -13,7 +13,17 @@
 
 ## Support
 
+<<<<<<< HEAD
 We will try our best  to support this tool. If you have any issues, please open an issue on GitHub or on the discord server.
+=======
+No support
+
+Do not expect updates to this anymore, especially with all the events that have happened surrounding this tool
+
+It may be better for someone to rewrite the entire thing, and/or just create or use another tool
+>>>>>>> d8101fbf857e0b55f1184e18ecd2fedeffce08a1
+
+Note: This fork has mostly only been tested on Linux. For macOS, try doing the [usbd trick](https://www.reddit.com/r/iphone/comments/a8jui7/tip_if_your_having_issues_charging_your_device/) (running `sudo killall -STOP -c usbd`) if your device is not getting detected properly. If it still does not work, maybe try the other [archived Semaphorin](https://github.com/y08wilmarchive/Semaphorin)
 
 ## Chart of compatibility
 
@@ -116,6 +126,7 @@ We back up the `activation_records` from your main OS prior to downgrading your 
 
    ### Safari does not work (iOS 10)
    Use the FileManager app on the home screen instead. It is a drop in replacement for Safari, and has a built in download manager also.
+<<<<<<< HEAD
 
    ### Cydia is absent (on iPads)
    iPads have uicache issues with most jailbreaking tools. To open Cydia, enter `cydia://` in Safari's address bar and press Enter.
@@ -128,6 +139,8 @@ We back up the `activation_records` from your main OS prior to downgrading your 
 
    ### Terminal is absent (on iPads)
    iPads have uicache issues with most jailbreaking tools. To open Terminal, enter `mterminal://` in Safari's address bar and press Enter.  
+=======
+>>>>>>> d8101fbf857e0b55f1184e18ecd2fedeffce08a1
 
 ## Credits
 
