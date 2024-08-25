@@ -39,7 +39,7 @@ To use this app, you need to downgrade to a supported version, and have a suppor
 
 `xcode-select install` to install `git` on macos
 
-`git clone https://github.com/iDroidOS/iOS-Unsigned && cd iOS-Unsigned`
+`git clone https://github.com/ThatOSDeveloper/iOS-Unsigned && cd iOS-Unsigned`
 
 Connect device in DFU mode
 
