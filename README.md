@@ -11,7 +11,7 @@
 
 ## IF YOUR DEVICE SUPPORTS [LEGACY-IOS-KIT](https://github.com/LukeZGD/Legacy-iOS-Kit), YOU SHOULD REALLY USE THAT OVER THIS.
 
-Note: This fork has mostly only been tested on Linux. For macOS, try doing the [usbd trick](https://www.reddit.com/r/iphone/comments/a8jui7/tip_if_your_having_issues_charging_your_device/) (running `sudo killall -STOP -c usbd`) if your device is not getting detected properly. If it still does not work, maybe try the other [archived Semaphorin](https://github.com/y08wilmarchive/Semaphorin)
+Note: This fork has mostly only been tested on Linux. For macOS, try doing the [usbd trick](https://www.reddit.com/r/iphone/comments/a8jui7/tip_if_your_having_issues_charging_your_device/) (running `sudo killall -STOP -c usbd`) if your device is not getting detected properly. If it still does not work, maybe try the [archived Semaphorin](https://github.com/y08wilmarchive/Semaphorin)
 
 ## Chart of compatibility
 
